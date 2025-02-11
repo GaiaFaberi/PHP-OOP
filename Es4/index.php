@@ -6,5 +6,5 @@ require_once("./Persona.php");
     $stud -> setNome("Gaia");
     $stud -> setCognome("Faberi");
     $stud -> setMatricola("hikwefwf");
-    echo $stud -> presentati();
+    echo json_encode($stud);
 ?>

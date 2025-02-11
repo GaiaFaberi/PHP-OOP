@@ -1,5 +1,5 @@
 <?php
-    class Persona{
+    class Persona implements JsonSerializable{
         protected $nome;
         protected $cognome;
 
@@ -23,5 +23,12 @@
         function presentati(){
             return "nome: " .  $this ->getNome()  . ", cognome: " . $this ->getCognome();
         }
+
+        public function jsonSerialize() : array {
+            return [
+               'nome' => $this->nome,
+               'cognome' => $this->cognome,
+            ];
+           }
     }
 ?>
