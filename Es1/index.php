@@ -1,5 +1,5 @@
 <?php
-
+header("Content-Type: application/json")
     include("./Alunno.php");
 
     $alunno1 = new Alunno();
