@@ -18,9 +18,6 @@ header("Content-Type: application/json")
     $alunno3 -> setEta(19);
 
     $alunni = ["alunno1" => $alunno1, "alunno2" => $alunno2, "alunno3" => $alunno3];
-    /*foreach ($alunni as $studenti => $alunno) {
-        echo $alunno->stampa() . ", ";
-    }*/
 
     echo json_encode($alunni);
 ?>
